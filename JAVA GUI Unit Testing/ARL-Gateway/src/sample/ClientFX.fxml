@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="TCPClient_TAB" text="TCP Client">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="SendBtn_TCPClient" layoutX="253.0" layoutY="270.0" mnemonicParsing="false" onAction="#Send_TCPClient" prefHeight="25.0" prefWidth="100.0" text="Send" />
+                        <Label layoutX="20.0" layoutY="50.0" text="Sent" />
+                        <Label layoutX="230.0" layoutY="150.0" text="IP Address" />
+                        <Label layoutX="230.0" layoutY="50.0" text="Port Number" />
+                        <TextField fx:id="PortBox_TCPClient" layoutX="230.0" layoutY="100.0" />
+                        <TextField fx:id="IPBox_TCPClient" layoutX="230.0" layoutY="200.0" />
+                        <Label layoutX="250.0" layoutY="330.0" text="Programmed By: Mostafa Bassem">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="345.0" text="Autotronics Research Lab">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="SndBox_TCPClient" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="149.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="TCPServer_TAB" text="TCP Server">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="Btn_Echo1" layoutX="253.0" layoutY="270.0" mnemonicParsing="false" onAction="#Stop_TCPServer" prefHeight="25.0" prefWidth="100.0" text="Stop Server" />
+                        <Label layoutX="20.0" layoutY="50.0" text="Recieved" />
+                        <Label layoutX="230.0" layoutY="50.0" text="Port Number" />
+                        <TextField fx:id="PortBox_TCPServer" layoutX="230.0" layoutY="100.0" />
+                        <Label layoutX="250.0" layoutY="330.0" text="Programmed By: Mostafa Bassem">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="345.0" text="Autotronics Research Lab">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="StartBtn_TCPServer" layoutX="255.0" layoutY="220.0" mnemonicParsing="false" onAction="#Start_TCPServer" prefHeight="25.0" prefWidth="100.0" text="Start Server" />
+                        <TextArea fx:id="RcvBox_TCPServer" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="149.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="UDPClient_TAB" text="UDP Client">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="SendBtn_UDPClient" layoutX="253.0" layoutY="270.0" mnemonicParsing="false" onAction="#Send_UDPClient" prefHeight="25.0" prefWidth="100.0" text="Send" />
+                        <Label layoutX="20.0" layoutY="50.0" text="Sent" />
+                        <Label layoutX="230.0" layoutY="150.0" text="IP Address" />
+                        <Label layoutX="230.0" layoutY="50.0" text="Port Number" />
+                        <TextField fx:id="PortBox_UDPClient" layoutX="230.0" layoutY="100.0" />
+                        <TextField fx:id="IPBox_UDPClient" layoutX="230.0" layoutY="200.0" />
+                        <Label layoutX="250.0" layoutY="330.0" text="Programmed By: Mostafa Bassem">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="345.0" text="Autotronics Research Lab">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="SndBox_UDPClient" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="149.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="UDPServer_TAB" text="UDP Server">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="Stop_UDPServer" layoutX="255.0" layoutY="270.0" mnemonicParsing="false" onAction="#Stop_UDPServer" prefHeight="25.0" prefWidth="100.0" text="Stop Server" />
+                        <Label layoutX="20.0" layoutY="50.0" text="Recieved" />
+                        <Label layoutX="230.0" layoutY="50.0" text="Port Number" />
+                        <TextField fx:id="PortBox_UDPServer" layoutX="230.0" layoutY="100.0" />
+                        <Label layoutX="250.0" layoutY="330.0" text="Programmed By: Mostafa Bassem">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="265.0" layoutY="345.0" text="Autotronics Research Lab">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="StartBtn_UDPServer" layoutX="255.0" layoutY="220.0" mnemonicParsing="false" onAction="#Start_UDPServer" prefHeight="25.0" prefWidth="100.0" text="Start Server" />
+                        <TextArea fx:id="RcvBox_UDPServer" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="149.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
